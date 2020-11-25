@@ -668,7 +668,7 @@ F 3 "" H 7100 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 6000 6500 6000
+	6150 6000 6400 6000
 Wire Wire Line
 	6500 6000 6500 6100
 Wire Wire Line
@@ -1000,7 +1000,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 1600 10150 1600
 Text Label 10450 1500 2    50   ~ 0
-TX
+RX
 $Comp
 L SamacSys_Parts:SDS-50J J8
 U 1 1 60102EA1
@@ -1019,7 +1019,7 @@ F 9 "SDS-50J" H 10600 1800 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Text Label 8250 2800 0    50   ~ 0
-TX
+RX
 Wire Wire Line
 	8250 2800 8550 2800
 $Comp
@@ -1888,7 +1888,7 @@ Wire Wire Line
 	3250 5650 3350 5650
 Wire Wire Line
 	3350 5650 3350 5550
-NoConn ~ 4200 5800
+NoConn ~ 4200 5700
 NoConn ~ 6750 6400
 NoConn ~ 6750 6300
 Wire Wire Line
@@ -2318,4 +2318,20 @@ Wire Notes Line
 	7350 5500 7350 5250
 Text Notes 7396 5549 2    100  ~ 0
 V
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5FC35D0A
+P 6400 6050
+F 0 "#FLG0107" H 6400 6125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 6223 50  0001 C CNN
+F 2 "" H 6400 6050 50  0001 C CNN
+F 3 "~" H 6400 6050 50  0001 C CNN
+	1    6400 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 6000 6400 6050
+Connection ~ 6400 6000
+Wire Wire Line
+	6400 6000 6500 6000
 $EndSCHEMATC
