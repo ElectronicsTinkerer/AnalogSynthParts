@@ -1833,7 +1833,7 @@ F 1 "Screw_Terminal_01x03" V 3150 5350 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 3050 5750 50  0001 C CNN
 F 3 "~" H 3050 5750 50  0001 C CNN
 	1    3050 5750
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+15V #PWR0131
