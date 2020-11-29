@@ -1,5 +1,7 @@
 # Percussion Synthesizer
 A single op-amp "percussion synthesizer" redrawn from Forrest Mims III's *Getting Started in Electronics*
+
+## Picture
 ![A cool RTX rendering of the percussion synth PCB](./output/PercGenerator.png)
 
 ## Interface
