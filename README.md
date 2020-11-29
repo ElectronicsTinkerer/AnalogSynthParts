@@ -15,6 +15,7 @@ If you do not have a dual rail supply, you can omit the op-amp and just jumper p
 
 ## Schematic
 The schematic is realtively straight forward, just a 555 oscillator with a 741 op-amp to make the output swing both positive and negative. The choice of op-amp is not particularly important, as it is only acting as a comparator to increase the output voltage range of the board.   
+Also, many of the passives do not have specified values since they can be changed by the user to set the frequency and different ranges of the device. (At some point in the next few weeks, I will post the values I am using and the ranges they give)
 
 ## Board
 The board is designed to have a single (panel mount) pot at one end of the board. This supports the board. At the other end is the connector for power, the output, enable, and range selection. A note about assembly: the ICs are facing opposite directions!
