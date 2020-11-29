@@ -1,5 +1,5 @@
 # Arduino_MIDI_Device
-A small Arduino-controled MIDI device with built-in dual rail supply.
+A small Arduino-controlled MIDI device with built-in dual rail supply.
 
 ## Picture
 ![A cool render of the board in 3D with RTX](output/ArduinoMicroDualRailBoard.png)
