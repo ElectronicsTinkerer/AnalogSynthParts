@@ -19,4 +19,4 @@ The schematic for the ADSR section of the board is based off the *Soundtronics A
 There is a on-board ±12V power supply for the AS3360.
 
 ## Board
-The board is designed in a similar manner to the other ones in this repository, where it is supported by the potentiometers' leads. The pots are placed 1 inch apart for easy hole placement when designing the panel. There are two external switches. The first, connected to `J2` is for setting the range of slopes for the envelope (This one is needed or solder a jumper on the appropriate contacts if not wired.) The second switch is for a secondary gate/trigger input. This one is optional.
+The board is designed in a similar manner to the other ones in this repository, where it is supported by the potentiometers' leads. The pots are placed 1 inch apart for easy hole placement when designing the panel. There are two external switches. The first, connected to `J2` is for setting the range of slopes for the envelope (This one is needed or solder a jumper on the appropriate contacts if not wired.) The second switch (`J1`) is for a secondary gate/trigger input. This one is optional.
