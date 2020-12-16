@@ -518,17 +518,6 @@ F 3 "" H 1250 4750 50  0001 C CNN
 	1    1250 4750
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 5FE2ACDE
-P 1700 2750
-F 0 "RV1" H 1631 2796 50  0000 R CNN
-F 1 "10k" H 1631 2705 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 2750 50  0001 C CNN
-F 3 "~" H 1700 2750 50  0001 C CNN
-	1    1700 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 2900 2650 3300
 Wire Wire Line
@@ -546,16 +535,9 @@ Wire Wire Line
 Wire Wire Line
 	1700 3100 1700 3150
 Connection ~ 1400 2500
-Wire Wire Line
-	1400 3100 1400 3650
-Wire Wire Line
-	1700 3650 1700 3700
 Connection ~ 1400 3100
 Wire Wire Line
-	1400 3650 1400 4200
-Wire Wire Line
 	1700 4200 1700 4250
-Connection ~ 1400 3650
 Wire Wire Line
 	1700 4600 1700 4550
 Wire Wire Line
@@ -760,17 +742,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 4400 3050 4400
 $Comp
-L Device:R_POT RV2
-U 1 1 5FDA4965
-P 1700 3300
-F 0 "RV2" H 1631 3346 50  0000 R CNN
-F 1 "10k" H 1631 3255 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 3300 50  0001 C CNN
-F 3 "~" H 1700 3300 50  0001 C CNN
-	1    1700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV3
 U 1 1 5FDA4F64
 P 1700 3850
@@ -779,18 +750,7 @@ F 1 "10k" H 1631 3805 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 3850 50  0001 C CNN
 F 3 "~" H 1700 3850 50  0001 C CNN
 	1    1700 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV4
-U 1 1 5FDA5552
-P 1700 4400
-F 0 "RV4" H 1631 4446 50  0000 R CNN
-F 1 "10k" H 1631 4355 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 4400 50  0001 C CNN
-F 3 "~" H 1700 4400 50  0001 C CNN
-	1    1700 4400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3500 2900 3500 3700
@@ -1275,8 +1235,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 3500 1700 3500
 Wire Wire Line
-	1400 3650 1700 3650
-Wire Wire Line
 	1250 4050 1700 4050
 Wire Wire Line
 	1400 4200 1700 4200
@@ -1472,4 +1430,56 @@ Wire Wire Line
 	4200 6850 4600 6850
 Wire Wire Line
 	4200 5950 4600 5950
+$Comp
+L power:GND #PWR0131
+U 1 1 606E9E6B
+P 1950 3600
+F 0 "#PWR0131" H 1950 3350 50  0001 C CNN
+F 1 "GND" H 1955 3427 50  0000 C CNN
+F 2 "" H 1950 3600 50  0001 C CNN
+F 3 "" H 1950 3600 50  0001 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3100 1400 4200
+$Comp
+L Device:R_POT RV1
+U 1 1 5FE2ACDE
+P 1700 2750
+F 0 "RV1" H 1631 2796 50  0000 R CNN
+F 1 "10k" H 1631 2705 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 2750 50  0001 C CNN
+F 3 "~" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5FDA4965
+P 1700 3300
+F 0 "RV2" H 1631 3346 50  0000 R CNN
+F 1 "10k" H 1631 3255 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 3300 50  0001 C CNN
+F 3 "~" H 1700 3300 50  0001 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5FDA5552
+P 1700 4400
+F 0 "RV4" H 1631 4446 50  0000 R CNN
+F 1 "10k" H 1631 4355 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 1700 4400 50  0001 C CNN
+F 3 "~" H 1700 4400 50  0001 C CNN
+	1    1700 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3550 1950 3550
+Wire Wire Line
+	1950 3550 1950 3600
+Wire Wire Line
+	1700 3550 1700 3700
 $EndSCHEMATC
