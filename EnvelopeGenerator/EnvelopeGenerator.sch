@@ -486,10 +486,10 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/8
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C R6
+L Device:C C13
 U 1 1 5FE1841F
 P 2950 1850
-F 0 "R6" H 2835 1804 50  0000 R CNN
+F 0 "C13" H 2835 1804 50  0000 R CNN
 F 1 "10n" H 2835 1895 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2988 1700 50  0001 C CNN
 F 3 "~" H 2950 1850 50  0001 C CNN
