@@ -99,7 +99,7 @@ F 1 "10k" H 5480 4145 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 5550 4100 50  0001 C CNN
 F 3 "~" H 5550 4100 50  0001 C CNN
 	1    5550 4100
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C1
@@ -320,14 +320,6 @@ $EndComp
 Wire Wire Line
 	5550 4250 5550 4350
 Wire Wire Line
-	5250 4100 5400 4100
-Wire Wire Line
-	5550 3950 5550 3850
-Wire Wire Line
-	5550 3850 5900 3850
-Wire Wire Line
-	5900 3850 5900 4100
-Wire Wire Line
 	3950 4000 3850 4000
 $Comp
 L power:+15V #PWR03
@@ -494,8 +486,6 @@ Text Label 6600 4200 0    50   ~ 0
 TRIGGER
 Wire Wire Line
 	6250 4000 6250 4350
-Wire Wire Line
-	5900 4100 6950 4100
 Text Label 6600 4100 0    50   ~ 0
 OUT
 NoConn ~ 4700 2250
@@ -535,4 +525,14 @@ Wire Wire Line
 Connection ~ 3600 5150
 Wire Wire Line
 	3600 5150 3600 5400
+Wire Wire Line
+	5250 4100 5300 4100
+Wire Wire Line
+	5300 4100 5300 3900
+Wire Wire Line
+	5300 3900 5550 3900
+Wire Wire Line
+	5550 3900 5550 3950
+Wire Wire Line
+	5700 4100 6950 4100
 $EndSCHEMATC
