@@ -18,7 +18,7 @@ L Device:C C2
 U 1 1 5FBED018
 P 4150 2650
 F 0 "C2" H 4265 2696 50  0000 L CNN
-F 1 "0.001uF" H 4265 2605 50  0000 L CNN
+F 1 "0.01uF" H 4265 2605 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4188 2500 50  0001 C CNN
 F 3 "~" H 4150 2650 50  0001 C CNN
 	1    4150 2650
@@ -52,28 +52,17 @@ U 1 1 5FBEDDA8
 P 4250 4100
 F 0 "U1" H 4350 4350 50  0000 L CNN
 F 1 "LM741" H 4350 4250 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4300 4150 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4300 4150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 4400 4250 50  0001 C CNN
 	1    4250 4100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:2N3904 Q1
-U 1 1 5FBEE390
-P 3700 4900
-F 0 "Q1" H 3891 4946 50  0000 L CNN
-F 1 "2N3904" H 3891 4855 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3900 4825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3700 4900 50  0001 L CNN
-	1    3700 4900
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV3
 U 1 1 5FBEEB2A
 P 4700 2400
 F 0 "RV3" V 4500 2400 50  0000 C CNN
-F 1 "1M" V 4584 2400 50  0000 C CNN
+F 1 "100k" V 4584 2400 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 4700 2400 50  0001 C CNN
 F 3 "~" H 4700 2400 50  0001 C CNN
 	1    4700 2400
@@ -84,7 +73,7 @@ L Device:R_POT RV1
 U 1 1 5FBEED2D
 P 3600 2400
 F 0 "RV1" V 3393 2400 50  0000 C CNN
-F 1 "1M" V 3484 2400 50  0000 C CNN
+F 1 "100k" V 3484 2400 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Horizontal" H 3600 2400 50  0001 C CNN
 F 3 "~" H 3600 2400 50  0001 C CNN
 	1    3600 2400
@@ -193,23 +182,23 @@ Wire Wire Line
 $Comp
 L Device:R R2
 U 1 1 5FC03047
-P 4000 5150
-F 0 "R2" H 4070 5196 50  0000 L CNN
-F 1 "10k" H 4070 5105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3930 5150 50  0001 C CNN
-F 3 "~" H 4000 5150 50  0001 C CNN
-	1    4000 5150
+P 3600 4850
+F 0 "R2" H 3670 4896 50  0000 L CNN
+F 1 "1k" H 3670 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3530 4850 50  0001 C CNN
+F 3 "~" H 3600 4850 50  0001 C CNN
+	1    3600 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5FC035F5
-P 4950 4900
-F 0 "R3" V 4900 5100 50  0000 C CNN
-F 1 "10k" V 5000 5100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4880 4900 50  0001 C CNN
-F 3 "~" H 4950 4900 50  0001 C CNN
-	1    4950 4900
+P 4950 5200
+F 0 "R3" V 4900 5400 50  0000 C CNN
+F 1 "270" V 5000 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4880 5200 50  0001 C CNN
+F 3 "~" H 4950 5200 50  0001 C CNN
+	1    4950 5200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -262,7 +251,7 @@ F 3 "" H 6250 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 4200 5900 4900
+	5900 4200 5900 5200
 Wire Wire Line
 	5900 4200 6950 4200
 Connection ~ 6250 4000
@@ -349,33 +338,8 @@ Wire Wire Line
 	4150 4400 4150 4500
 Wire Wire Line
 	3600 4600 3600 4650
-$Comp
-L power:GND #PWR01
-U 1 1 5FC4E669
-P 3600 5600
-F 0 "#PWR01" H 3600 5350 50  0001 C CNN
-F 1 "GND" H 3605 5427 50  0000 C CNN
-F 2 "" H 3600 5600 50  0001 C CNN
-F 3 "" H 3600 5600 50  0001 C CNN
-	1    3600 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3600 5100 3600 5150
-Wire Wire Line
-	4000 5300 4000 5400
-Wire Wire Line
-	4000 5400 3600 5400
-Connection ~ 3600 5400
-Wire Wire Line
-	3600 5400 3600 5600
-Wire Wire Line
-	3900 4900 4000 4900
-Wire Wire Line
-	4000 4900 4000 5000
-Connection ~ 4000 4900
-Wire Wire Line
-	5100 4900 5900 4900
+	5100 5200 5900 5200
 Text Notes 5500 2300 0    50   ~ 0
 Circuit based on "Getting Started in Electronics" by Forrest Mims III\n"Percussion Synthesizer" - Page 123
 Wire Wire Line
@@ -506,8 +470,6 @@ $EndComp
 Text Notes 3000 4750 2    50   ~ 0
 External Switch Trigger
 Wire Wire Line
-	4000 4900 4800 4900
-Wire Wire Line
 	3600 4650 3150 4650
 Wire Wire Line
 	3150 4650 3150 4850
@@ -521,11 +483,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 4950 3150 5150
 Wire Wire Line
-	3150 5150 3600 5150
-Connection ~ 3600 5150
-Wire Wire Line
-	3600 5150 3600 5400
-Wire Wire Line
 	5250 4100 5300 4100
 Wire Wire Line
 	5300 4100 5300 3900
@@ -535,4 +492,77 @@ Wire Wire Line
 	5550 3900 5550 3950
 Wire Wire Line
 	5700 4100 6950 4100
+$Comp
+L power:-15V #PWR0101
+U 1 1 601596C3
+P 3150 5150
+F 0 "#PWR0101" H 3150 5250 50  0001 C CNN
+F 1 "-15V" H 3165 5323 50  0000 C CNN
+F 2 "" H 3150 5150 50  0001 C CNN
+F 3 "" H 3150 5150 50  0001 C CNN
+	1    3150 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:6N139 U2
+U 1 1 6015B0C1
+P 4150 5300
+F 0 "U2" H 4150 5767 50  0000 C CNN
+F 1 "6N139" H 4150 5676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4440 5000 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 4440 5000 50  0001 C CNN
+	1    4150 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR0102
+U 1 1 60177C95
+P 3600 5600
+F 0 "#PWR0102" H 3600 5700 50  0001 C CNN
+F 1 "-15V" H 3615 5773 50  0000 C CNN
+F 2 "" H 3600 5600 50  0001 C CNN
+F 3 "" H 3600 5600 50  0001 C CNN
+	1    3600 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 5400 4600 5400
+Wire Wire Line
+	4600 5400 4600 5500
+Wire Wire Line
+	4450 5200 4800 5200
+$Comp
+L power:GND #PWR0104
+U 1 1 6017D71D
+P 3400 5150
+F 0 "#PWR0104" H 3400 4900 50  0001 C CNN
+F 1 "GND" H 3405 4977 50  0000 C CNN
+F 2 "" H 3400 5150 50  0001 C CNN
+F 3 "" H 3400 5150 50  0001 C CNN
+	1    3400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5150 3400 5100
+Wire Wire Line
+	3400 5100 3850 5100
+Wire Wire Line
+	3600 5000 3600 5400
+Wire Wire Line
+	3600 5400 3850 5400
+Wire Wire Line
+	3850 5500 3600 5500
+Wire Wire Line
+	3600 5500 3600 5600
+$Comp
+L power:GND #PWR?
+U 1 1 6018B0A7
+P 4600 5500
+F 0 "#PWR?" H 4600 5250 50  0001 C CNN
+F 1 "GND" H 4605 5327 50  0000 C CNN
+F 2 "" H 4600 5500 50  0001 C CNN
+F 3 "" H 4600 5500 50  0001 C CNN
+	1    4600 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
