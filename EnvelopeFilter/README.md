@@ -1,4 +1,4 @@
-# Envelope Generator
+# Envelope Filter
 A simple ADSR-controlled VCF for use in panel-mount synthesizers.
 
 ![A picture of the board, with some cool RTX because why not?](./output/EnvelopeFilter.png)
