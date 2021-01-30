@@ -1015,7 +1015,7 @@ L Device:C C9
 U 1 1 607C08AA
 P 7550 2550
 F 0 "C9" H 7750 2500 50  0000 R CNN
-F 1 "1nF" H 7750 2600 50  0000 R CNN
+F 1 "1nF" H 7800 2600 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7588 2400 50  0001 C CNN
 F 3 "~" H 7550 2550 50  0001 C CNN
 	1    7550 2550
@@ -1036,7 +1036,7 @@ $Comp
 L Device:R R25
 U 1 1 607DD3EF
 P 7300 2400
-F 0 "R25" H 7200 2350 50  0000 C CNN
+F 0 "R25" H 7150 2350 50  0000 C CNN
 F 1 "220k" H 7150 2450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7230 2400 50  0001 C CNN
 F 3 "~" H 7300 2400 50  0001 C CNN
@@ -1391,7 +1391,7 @@ Wire Wire Line
 Connection ~ 4600 1800
 Wire Wire Line
 	4700 1350 4700 1550
-Text Label 9200 1550 2    50   ~ 0
+Text Label 9650 1550 2    50   ~ 0
 SIG_OUT
 Connection ~ 8600 1750
 Wire Wire Line
@@ -1414,8 +1414,6 @@ Wire Wire Line
 Connection ~ 4900 1550
 Wire Wire Line
 	4900 1550 4700 1550
-Wire Wire Line
-	8700 1550 9200 1550
 Wire Wire Line
 	6450 2100 6800 2100
 Wire Wire Line
@@ -1519,20 +1517,16 @@ SIG_OUT
 $Comp
 L Device:C C10
 U 1 1 611D5E3E
-P 8400 4550
-F 0 "C10" H 8300 4500 50  0000 R CNN
-F 1 "1uF" H 8300 4600 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8438 4400 50  0001 C CNN
-F 3 "~" H 8400 4550 50  0001 C CNN
-	1    8400 4550
-	-1   0    0    1   
+P 9050 1550
+F 0 "C10" H 8950 1500 50  0000 R CNN
+F 1 "1uF" H 8950 1600 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 9088 1400 50  0001 C CNN
+F 3 "~" H 9050 1550 50  0001 C CNN
+	1    9050 1550
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8400 4400 8400 4300
-Wire Wire Line
 	8400 4300 8750 4300
-Wire Wire Line
-	8400 4700 8400 4800
 Wire Wire Line
 	8550 5400 8400 5400
 Wire Wire Line
@@ -1762,4 +1756,10 @@ Wire Wire Line
 Wire Wire Line
 	10100 1900 10100 1800
 Connection ~ 10100 1800
+Wire Wire Line
+	8700 1550 8900 1550
+Wire Wire Line
+	9200 1550 9650 1550
+Wire Wire Line
+	8400 4300 8400 4800
 $EndSCHEMATC
